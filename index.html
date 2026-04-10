@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kevin's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <span class="logo">Kevin</span>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="hero">
+      <h1>Hi, I'm Kevin</h1>
+      <p>IT Student & Full Stack Developer in the Philippines</p>
+      <a href="https://king-s-youth.onrender.com" class="btn">View My Work</a>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm an IT student passionate about building real-world web applications.
+        I've built and deployed projects using Node.js, MySQL, and modern frontend tools.
+        I'm eager to learn and grow as a developer, and I'm excited to share my journey with you.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">Git</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+
+        <div class="card">
+          <h3>King's Youth GREATER Web</h3>
+          <p>Ministry website with event registration, admin panel, and live deployment on Render.</p>
+          <a href="https://king-s-youth.onrender.com" class="btn-outline">View Project</a>
+        </div>
+
+        <div class="card">
+          <h3>More coming soon</h3>
+          <p>Currently building a weather dashboard and task manager as part of my learning roadmap.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text"   id="name"    placeholder="Your name"    required>
+        <input type="email"  id="email"   placeholder="Your email"   required>
+        <textarea            id="message" placeholder="Your message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="form-success" style="display:none;">Thanks! I'll get back to you soon.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Kevin · Built from scratch</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
