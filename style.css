@@ -2,13 +2,17 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: black;
 }
 
 body {
   font-family: 'Inter', sans-serif;
   color: #1a1a2e;
   line-height: 1.7;
+  background: linear-gradient(to top, #353434, #e0e0e0);
 }
+
+/******navigation bar*******/
 
 nav {
   display: flex;
@@ -30,11 +34,32 @@ nav a {
   font-size: 15px;
 }
 
+/*************Section and Hero****************/
+
 section {
   padding: 80px 32px;
   max-width: 900px;
   margin: 0 auto;
 }
+
+#hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 32px;
+}
+
+#hero a:hover {
+  background: black;
+  color: white;
+}
+
+#hero .btn {
+  align-self: flex-start;
+}
+
+/******************************************/
 
 h1 { font-size: 42px; margin-bottom: 12px; }
 h2 { font-size: 28px; margin-bottom: 24px; }
@@ -44,8 +69,8 @@ h3 { font-size: 18px; margin-bottom: 8px; }
   display: inline-block;
   margin-top: 20px;
   padding: 12px 28px;
-  background: #5c6bc0;
-  color: white;
+  background: grey;
+  color: black;
   border-radius: 8px;
   text-decoration: none;
 }
@@ -58,8 +83,9 @@ h3 { font-size: 18px; margin-bottom: 8px; }
 
 .skill-tag {
   padding: 6px 16px;
-  background: #eef0fc;
-  color: #3c4ab0;
+  background: grey;
+  color: black;
+  border: 1px solid white;
   border-radius: 20px;
   font-size: 14px;
 }
@@ -75,6 +101,23 @@ h3 { font-size: 18px; margin-bottom: 8px; }
   padding: 24px;
   border: 1px solid #e0e0e0;
   border-radius: 12px;
+  align-items: center;
+}
+
+.card .btn-outline {
+  background: transparent;
+  color: black;
+  border: 1px solid white; 
+  border-radius: 12px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.card a:hover {
+  background: grey;
+  color: white;
+  border-color: grey;
 }
 
 form {
@@ -94,7 +137,7 @@ input, textarea {
 
 button[type="submit"] {
   padding: 12px 24px;
-  background: #5c6bc0;
+  background: grey;
   color: white;
   border: none;
   border-radius: 8px;
@@ -102,16 +145,9 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-#hero {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #0d0d1a;
-  color: white;
-  padding: 0 32px;
-}
-
-#hero .btn {
-  align-self: flex-start;
+footer {
+  text-align: center;
+  padding: 24px 32px;
+  border-top: 1px solid black;
+  color: #777;
 }
